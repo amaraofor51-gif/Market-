@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaShop — Products</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="products">
+  <div class="nav">
+    <div class="nav-inner container">
+      <div class="brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" fill="#2563eb"/></svg>
+        NovaShop
+        <span class="badge">E-commerce</span>
+      </div>
+      <div class="spacer"></div>
+      <div class="header-actions">
+        <a href="products.html" class="btn secondary">Products</a>
+        <a href="cart.html" class="btn">Cart <span id="cart-count" class="count-pill">0</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Products</h2>
+    <div class="searchbar">
+      <input id="search" class="input" placeholder="Search products..." />
+      <select id="category">
+        <option value="All">All</option>
+        <option value="Phones">Phones</option>
+        <option value="Laptops">Laptops</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Home">Home</option>
+        <option value="Sports">Sports</option>
+      </select>
+    </div>
+    <div id="product-grid" class="grid" style="grid-template-columns: repeat(auto-fill,minmax(230px,1fr)); margin-top:12px;"></div>
+  </div>
+
+  <div class="footer">
+    <div class="container small">
+      <div>
+        <strong>NovaShop</strong><br />
+        Premium gadgets shipped fast across Nigeria.
+      </div>
+      <div>
+        <strong>Support</strong><br />
+        Help Center<br/>Shipping & Returns<br/>Warranty
+      </div>
+      <div>
+        <strong>Company</strong><br />
+        About<br/>Careers<br/>Contact
+      </div>
+      <div>
+        <strong>Legal</strong><br />
+        Privacy Policy<br/>Terms of Service<br/>Cookies
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.__PRODUCTS__ = [
+      {"id":"p-iphone15","title":"iPhone 15 Pro Max","description":"A17 Pro chip, 256GB – titanium design, blazing performance.","price":1450000,"category":"Phones","image":"https://images.unsplash.com/photo-1695653428122-dcbb7f2d3d1d?q=80&w=1200&auto=format&fit=crop"},
+      {"id":"p-pixel8","title":"Google Pixel 8","description":"Tensor G3, stellar camera, all-day battery.","price":640000,"category":"Phones","image":"https://images.unsplash.com/photo-1609250291996-fdebe6020a8d?q=80&w=1200&auto=format&fit=crop"},
+      {"id":"p-macbook","title":"MacBook Air 15”","description":"M2 chip, ultra-thin design, great battery life.","price":1350000,"category":"Laptops","image":"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop"},
+      {"id":"p-rog","title":"ASUS ROG Strix G15","description":"Ryzen 9 + RTX 4070 – built for high-FPS gaming.","price":1250000,"category":"Laptops","image":"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop"},
+      {"id":"p-earbuds","title":"Noise-Canceling Earbuds","description":"Crystal-clear calls, 40h case battery.","price":68000,"category":"Accessories","image":"https://images.unsplash.com/photo-1585386959984-a4155223168f?q=80&w=1200&auto=format&fit=crop"},
+      {"id":"p-watch","title":"Smart Fitness Watch","description":"Heart-rate, SpO2, GPS, 10-day battery.","price":95000,"category":"Sports","image":"https://images.unsplash.com/photo-1511732351157-1865efcb7b7b?q=80&w=1200&auto=format&fit=crop"},
+      {"id":"p-blender","title":"Pro Kitchen Blender","description":"800W, 3-speed with pulse – smoothies to soups.","price":52000,"category":"Home","image":"https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop"},
+      {"id":"p-mouse","title":"Wireless Ergonomic Mouse","description":"Silent clicks, 2.4GHz + Bluetooth multi-device.","price":18000,"category":"Accessories","image":"https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200&auto=format&fit=crop"}
+    ];
+  </script>
+  <script src="assets/script.js"></script>
+</body>
+</html>

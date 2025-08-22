@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaShop — Checkout</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="checkout">
+  <div class="nav">
+    <div class="nav-inner container">
+      <div class="brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" fill="#2563eb"/></svg>
+        NovaShop
+        <span class="badge">E-commerce</span>
+      </div>
+      <div class="spacer"></div>
+      <div class="header-actions">
+        <a href="products.html" class="btn secondary">Products</a>
+        <a href="cart.html" class="btn">Cart <span id="cart-count" class="count-pill">0</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Checkout</h2>
+    <div class="small">Fill your details and place the order. (Demo only — no live payments.)</div>
+
+    <form id="checkout-form" class="card" style="padding:16px;margin-top:12px">
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div>
+          <label>First name</label>
+          <input required class="input" name="firstName" placeholder="Ada"/>
+        </div>
+        <div>
+          <label>Last name</label>
+          <input required class="input" name="lastName" placeholder="Obi"/>
+        </div>
+      </div>
+      <div style="margin-top:10px">
+        <label>Email</label>
+        <input required type="email" class="input" name="email" placeholder="you@example.com"/>
+      </div>
+      <div style="margin-top:10px">
+        <label>Phone</label>
+        <input required class="input" name="phone" placeholder="0803 000 0000"/>
+      </div>
+      <div style="margin-top:10px">
+        <label>Delivery address</label>
+        <textarea required class="input" name="address" rows="3" placeholder="House 10, Admiralty Way, Lekki Phase 1, Lagos"></textarea>
+      </div>
+
+      <div class="total"><span>Order Total</span><span id="checkout-total">₦0</span></div>
+      <button class="btn block" type="submit">Place Order</button>
+      <div class="small" style="margin-top:8px">By placing an order, you agree to our Terms and Privacy Policy.</div>
+    </form>
+
+    <div id="order-success" class="card" style="padding:16px;margin-top:12px;display:none">
+      <h3>🎉 Order placed!</h3>
+      <p class="small">Thank you. Your order ID is <strong id="order-id"></strong>. A receipt has been (pretend) emailed to you.</p>
+      <div style="margin-top:10px">
+        <a class="btn" href="products.html">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container small">
+      <div>
+        <strong>NovaShop</strong><br />
+        Premium gadgets shipped fast across Nigeria.
+      </div>
+      <div>
+        <strong>Support</strong><br />
+        Help Center<br/>Shipping & Returns<br/>Warranty
+      </div>
+      <div>
+        <strong>Company</strong><br />
+        About<br/>Careers<br/>Contact
+      </div>
+      <div>
+        <strong>Legal</strong><br />
+        Privacy Policy<br/>Terms of Service<br/>Cookies
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
